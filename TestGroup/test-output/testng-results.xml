@@ -1,17 +1,74 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-09-19T08:18:25Z" name="Default suite" finished-at="2022-09-19T08:18:29Z" duration-ms="3857">
+  <suite started-at="2022-10-10T07:19:48Z" name="testSuite_Search" finished-at="2022-10-10T07:20:08Z" duration-ms="19357">
     <groups>
     </groups>
-    <test started-at="2022-09-19T08:18:25Z" name="Default test" finished-at="2022-09-19T08:18:29Z" duration-ms="3857">
-      <class name="prueba.NewTestSel">
-        <test-method signature="testsel()[pri:0, instance:prueba.NewTestSel@609db546]" started-at="2022-09-19T03:18:25Z" name="testsel" finished-at="2022-09-19T03:18:29Z" duration-ms="3838" status="PASS">
+    <test started-at="2022-10-10T07:19:48Z" name="TC_02_Blouse" finished-at="2022-10-10T07:19:59Z" duration-ms="10531">
+      <class name="testCases_Search.TC_02_Blouse">
+        <test-method is-config="true" signature="startWebDriver()[pri:0, instance:testCases_Search.TC_02_Blouse@56ac5c80]" started-at="2022-10-10T02:19:48Z" name="startWebDriver" finished-at="2022-10-10T02:19:53Z" duration-ms="4658" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testsel -->
-      </class> <!-- prueba.NewTestSel -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- startWebDriver -->
+        <test-method signature="TC02()[pri:0, instance:testCases_Search.TC_02_Blouse@56ac5c80]" started-at="2022-10-10T02:19:53Z" name="TC02" finished-at="2022-10-10T02:19:59Z" duration-ms="5646" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[El text Blouse no esta desplegado expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: El text Blouse no esta desplegado expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at testCases_Search.TC_02_Blouse.TC02(TC_02_Blouse.java:30)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:756)
+	at org.testng.TestRunner.run(TestRunner.java:610)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:421)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC02 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases_Search.TC_02_Blouse@56ac5c80]" started-at="2022-10-10T02:19:59Z" name="closeDriver" finished-at="2022-10-10T02:19:59Z" duration-ms="205" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- testCases_Search.TC_02_Blouse -->
+    </test> <!-- TC_02_Blouse -->
+    <test started-at="2022-10-10T07:19:59Z" name="TC_01_Blouse" finished-at="2022-10-10T07:20:08Z" duration-ms="8778">
+      <class name="testCases_Search.TC_01_SearchDress">
+        <test-method is-config="true" signature="startWebDriver()[pri:0, instance:testCases_Search.TC_01_SearchDress@7c447c76]" started-at="2022-10-10T02:19:59Z" name="startWebDriver" finished-at="2022-10-10T02:20:04Z" duration-ms="4883" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startWebDriver -->
+        <test-method signature="TC01()[pri:0, instance:testCases_Search.TC_01_SearchDress@7c447c76]" started-at="2022-10-10T02:20:04Z" name="TC01" finished-at="2022-10-10T02:20:08Z" duration-ms="3662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC01 -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:testCases_Search.TC_01_SearchDress@7c447c76]" started-at="2022-10-10T02:20:08Z" name="closeDriver" finished-at="2022-10-10T02:20:08Z" duration-ms="232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+      </class> <!-- testCases_Search.TC_01_SearchDress -->
+    </test> <!-- TC_01_Blouse -->
+  </suite> <!-- testSuite_Search -->
 </testng-results>

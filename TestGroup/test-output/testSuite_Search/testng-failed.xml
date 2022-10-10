@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [testSuite_Search]" guice-stage="DEVELOPMENT">
+  <test parallel="tests" name="TC_02_Blouse(failed)">
+    <classes>
+      <class name="testCases_Search.TC_02_Blouse">
+        <methods>
+          <include name="TC02"/>
+          <include name="startWebDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- testCases_Search.TC_02_Blouse -->
+      <class name="testCases_Search.TC_01_SearchDress">
+        <methods>
+          <include name="startWebDriver"/>
+          <include name="closeDriver"/>
+        </methods>
+      </class> <!-- testCases_Search.TC_01_SearchDress -->
+    </classes>
+  </test> <!-- TC_02_Blouse(failed) -->
+</suite> <!-- Failed suite [testSuite_Search] -->
